@@ -148,3 +148,152 @@
     }
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .hero {
+    .title {
+      font-size: calc(1.75rem + .5vw);
+    }
+
+    &__image {
+      min-width: 20rem;
+      flex: 0 1 40rem;
+    }
+  }
+
+  .main {
+    padding-top: calc(4rem + 4vh);
+
+    .card {
+      &__image {
+        min-width: 8rem;
+        flex: 0 1 18rem;
+      }
+  
+      & > * {
+        padding-left: calc(1rem + 1.5vw);
+      }
+    }
+  }
+
+  .footer {
+    .nav {
+      column-count: 1;
+      flex: 1;
+    }
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .hero {
+    padding: 1.5rem 0 2.5rem 0;
+    background: url("../images/bg-hero-mobile.svg"), $pale-cyan;
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    &__cta {
+      padding-right: 0;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 2rem;
+    }
+
+    &__header {
+      padding-bottom: calc(2.5rem + 2vh);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .btn {
+        &--header {
+          padding: .5rem 2rem;
+          font-size: .9rem;
+        }
+      }
+  
+      .header__logo {
+        width: 30%;
+      }
+    }
+
+    &__image {
+      max-width: 90%;
+      flex: 1 0 15rem;
+    }
+  }
+
+  .main {
+    padding-top: calc(4rem + 4vh);
+
+    .card {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      &__image {
+        max-width: 100%;
+        padding: 0;
+        order: -1;
+      }
+
+      &__text {
+        width: 100%;
+        padding: 2rem 0 0 0;
+      }
+
+      &--flipped {
+        flex-direction: column;
+    
+        .card__text {
+          width: 100%;
+          padding: 2rem 0 0 0;
+        }
+      }
+
+      &-cta {
+        width: 100%;
+        font-size: .9rem;
+      }
+    }
+  }
+
+  .footer {
+    padding: 8rem 0 0 2rem;
+
+    .container {
+      width: 100%;
+    }
+    
+    &__logo {
+      width: 40%;
+    }
+
+    &__content {
+      flex-direction: column;
+      margin: calc(1.75rem + .75vh) 0 1rem 0;
+
+      & > * {
+        margin-bottom: 1rem;
+      }
+
+      .social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+      }
+    }
+
+    .copyright {
+      justify-content: center;
+      padding-bottom: 2rem;
+    }
+  }
+}

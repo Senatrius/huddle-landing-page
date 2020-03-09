@@ -208,6 +208,169 @@ body {
   margin-left: .5rem;
 }
 
+@media screen and (max-width: 1024px) {
+  .hero .title {
+    font-size: calc(1.75rem + .5vw);
+  }
+  .hero__image {
+    min-width: 20rem;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 40rem;
+            flex: 0 1 40rem;
+  }
+  .main {
+    padding-top: calc(4rem + 4vh);
+  }
+  .main .card__image {
+    min-width: 8rem;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 18rem;
+            flex: 0 1 18rem;
+  }
+  .main .card > * {
+    padding-left: calc(1rem + 1.5vw);
+  }
+  .footer .nav {
+    -webkit-column-count: 1;
+            column-count: 1;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .hero {
+    padding: 1.5rem 0 2.5rem 0;
+    background: url("../images/bg-hero-mobile.svg"), #ebfbff;
+  }
+  .hero__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .hero__cta {
+    padding-right: 0;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 2rem;
+  }
+  .hero__header {
+    padding-bottom: calc(2.5rem + 2vh);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .hero__header .btn--header {
+    padding: .5rem 2rem;
+    font-size: .9rem;
+  }
+  .hero__header .header__logo {
+    width: 30%;
+  }
+  .hero__image {
+    max-width: 90%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 15rem;
+            flex: 1 0 15rem;
+  }
+  .main {
+    padding-top: calc(4rem + 4vh);
+  }
+  .main .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .main .card__image {
+    max-width: 100%;
+    padding: 0;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .main .card__text {
+    width: 100%;
+    padding: 2rem 0 0 0;
+  }
+  .main .card--flipped {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .card--flipped .card__text {
+    width: 100%;
+    padding: 2rem 0 0 0;
+  }
+  .main .card-cta {
+    width: 100%;
+    font-size: .9rem;
+  }
+  .footer {
+    padding: 8rem 0 0 2rem;
+  }
+  .footer .container {
+    width: 100%;
+  }
+  .footer__logo {
+    width: 40%;
+  }
+  .footer__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: calc(1.75rem + .75vh) 0 1rem 0;
+  }
+  .footer__content > * {
+    margin-bottom: 1rem;
+  }
+  .footer__content .social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 1rem;
+  }
+  .footer .copyright {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 2rem;
+  }
+}
+
 .container {
   width: 90%;
   max-width: 1440px;
@@ -316,6 +479,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
   width: 60%;
   margin: 0 auto;
   padding: calc(2rem + 1vw);
@@ -329,10 +493,5 @@ body {
   font-family: Poppins, sans-serif;
   text-transform: capitalize;
   padding-bottom: calc(2rem + 1vh);
-}
-
-.card-cta .btn {
-  padding: 1.2rem 5rem;
-  font-size: 1.1rem;
 }
 /*# sourceMappingURL=main.css.map */
