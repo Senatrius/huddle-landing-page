@@ -43,14 +43,15 @@
 
 	&__image {
     min-width: 30rem;
-    height: auto;
+    height: 100%;
+    width: 100%;
 		flex: 0 1 62rem;
 	}
 }
 
 .main {
 	width: 100%;
-	padding-top: calc(6.5rem + 6vh);
+	padding-top: calc(9rem + 1vh);
 
 	.container {
 		& > *:not(:last-child) {
