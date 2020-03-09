@@ -1,0 +1,150 @@
+.hero {
+  width: 100%;
+  padding: 2.75rem 0 3.75rem 0;
+  background: url("../images/bg-hero-desktop.svg"), $pale-cyan;
+  background-size: 100% 100%;
+
+  &__header {
+    padding-bottom: calc(2.5rem + 2vh);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .header__logo {
+      width: 15%;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__cta {
+    display: flex;
+    flex-direction: column;
+    padding-right: 4.75rem;
+    width: 100%;
+    align-items: flex-start;
+    flex-shrink: 1.5;
+
+    .title {
+      font-family: Poppins, sans-serif;
+      text-transform: capitalize;
+      font-size: calc(1.75rem + .5vw);
+    }
+
+    .desc {
+      font-size: 1rem;
+      padding: calc(1rem + 1vh) 0;
+    }
+  }
+
+  &__image {
+    min-width: 30rem;
+    flex: 0 1 62rem;
+  }
+}
+
+.main {
+  width: 100%;
+  padding-top: calc(6.5rem + 6vh);
+
+  .container {
+    & > *:not(:last-child) {
+      margin-bottom: 2.2rem;
+    }
+  }
+
+  .card-cta {
+    transform: translateY(35%);
+  }
+}
+
+.footer {
+  background: $dark-cyan;
+  color: white;
+  padding: 10rem 4rem 4rem 2rem;
+  
+  &__logo {
+    display: block;
+    width: 20%;
+    filter: brightness(0) invert(1);
+  }
+
+  &__content {
+    margin: calc(1.75rem + .75vh) 0;
+    display: flex;
+    justify-content: space-between;
+
+    .contacts {
+      padding-right: calc(5rem + 3vw);
+      font-size: .9rem;
+      flex: 2;
+
+      & > * {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 1.25rem;
+      }
+
+      .icon {
+        width: 1rem;
+        height: 1rem;
+        margin-right: 1.25rem;
+        margin-top: .2rem;
+      }
+    }
+  }
+
+  .nav {
+    flex: 2;
+    column-count: 2;
+
+    &__item {
+      padding-bottom: .75rem;
+    }
+
+    &__link {
+      color: white;
+      font-size: 1rem;
+
+      &:hover {
+        color: $primary-pink;
+      }
+    }
+  }
+
+  .social {
+    flex: 1;
+
+    & > * {
+      display: inline-block;
+      width: 2.2rem;
+      text-align: center;
+      height: 2.2rem;
+      margin-right: .6rem;
+      padding-top: .2rem;
+      color: white;
+      border: 1px solid white;
+      border-radius: 10rem;
+
+      &:hover {
+        color: $primary-pink;
+        border: 1px solid $primary-pink;
+      }
+    }
+  }
+
+  .copyright {
+    display: flex;
+    align-items: center;
+    font-size: .75rem;
+    justify-content: flex-end;
+
+    p {
+      margin-left: .5rem;
+    }
+  }
+}
